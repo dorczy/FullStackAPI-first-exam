@@ -17,7 +17,7 @@ const jsonPath = join(__dirname, 'db', 'users.json');
  * 
  * @returns objektumok tömbje
  */
- const getList = async () => {
+const getList = async () => {
     const list = await fsp.readFile(jsonPath, 'utf-8');
     return JSON.parse(list);
 };
